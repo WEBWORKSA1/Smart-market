@@ -15,6 +15,7 @@ Static HTML/CSS/vanilla JS with a tiny Python templater. No framework, no npm in
 | `src/assets/styles.css` | Design tokens + components (light/dark) |
 | `build.py` | Builds `dist/` (multi-page site with SEO meta, sitemap, robots, ads.txt) and `preview.html` (single-file preview) |
 | `SMART-MARKET-BLUEPRINT.md` | Strategy, research on 28 sites, risks, phase-wise build prompts |
+| `deploy/github-pages.yml` | Optional GitHub Pages workflow |
 
 ## Build
 
@@ -26,7 +27,7 @@ cd dist && python3 -m http.server 8000
 ## Deploy
 
 - **Netlify / Vercel:** import this repo. `netlify.toml` / `vercel.json` already run `python3 build.py` and publish `dist/`.
-- **GitHub Pages:** Settings → Pages → Source: *GitHub Actions*. The workflow in `.github/workflows/pages.yml` builds and deploys on every push to `main`.
+- **GitHub Pages:** move `deploy/github-pages.yml` to `.github/workflows/pages.yml`, then Settings → Pages → Source: *GitHub Actions*. It builds and deploys on every push to `main`.
 - Point `smart.market` DNS at the host.
 
 ## Go-live checklist
