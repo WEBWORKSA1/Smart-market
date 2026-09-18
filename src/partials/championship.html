@@ -1,0 +1,114 @@
+<section class="hero" style="padding-bottom:24px">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="crumbs"><a href="index.html">Home</a> / Championship</div>
+      <span class="eyebrow">Season: <span data-season></span> · Free entry</span>
+      <h1 style="margin-top:12px">Smart Picks Championship</h1>
+      <p class="lede">$100,000 in virtual cash. Real market prices. A live leaderboard. The best-performing portfolios at month end win real prizes, funded by sponsors and supporters.</p>
+      <div class="row" style="margin-top:22px"><a class="btn amber lg" href="#play">Enter free &amp; start trading</a><a class="btn lg" href="#rules">Official rules</a></div>
+    </div>
+    <div class="board" style="padding:22px;background:var(--ink);color:var(--bg);border-color:transparent">
+      <span class="xs" style="opacity:.75;text-transform:uppercase;letter-spacing:.1em">Season ends in</span>
+      <div class="countdown" data-widget="countdown" style="margin-top:10px"></div>
+      <div class="grid g3" style="margin-top:18px;--gap:10px">
+        <div class="prize first"><span class="place">1st</span><b>$1,000</b></div>
+        <div class="prize"><span class="place">2nd</span><b>$500</b></div>
+        <div class="prize"><span class="place">3rd</span><b>$250</b></div>
+      </div>
+      <p class="xs" style="opacity:.75;margin-top:12px">+ Best rookie $100 · Best dividend portfolio $100 · Monthly "Smart Streak" badge</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-ad="leaderboard"></div></div>
+
+<section class="section tight" id="play">
+  <div class="wrap split" data-widget="contest">
+    <div class="stack" style="--gap:20px">
+      <div class="panel lift reg">
+        <h2>Claim your $100,000 portfolio</h2>
+        <p class="muted" style="margin-top:6px">Free · No credit card · Set up in 30 seconds</p>
+        <form data-form="contest" data-replace="no" data-success="Registered! Start trading below." class="grid g2" style="margin-top:18px;--gap:14px">
+          <div class="field"><label for="c-handle">Player name (public)</label><input id="c-handle" name="handle" required maxlength="20" placeholder="e.g. MapleValue" /></div>
+          <div class="field"><label for="c-email">Email (private)</label><input id="c-email" name="email" type="email" required placeholder="you@email.com" /></div>
+          <div class="field"><label for="c-country">Country</label><select id="c-country" name="country" required><option value="">Select…</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>India</option><option>Australia</option><option>Other</option></select></div>
+          <div class="field"><label for="c-level">Experience</label><select id="c-level" name="level"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+          <label class="check" style="grid-column:1/-1"><input type="checkbox" name="rules" required /> <span>I'm 18+ (or the age of majority where I live) and agree to the <a href="#rules">Official Rules</a>.</span></label>
+          <label class="check" style="grid-column:1/-1"><input type="checkbox" name="newsletter_optin" checked /> <span>Send me weekly leaderboard updates and Smart Open.</span></label>
+          <button class="btn amber lg" type="submit" style="grid-column:1/-1">Start with $100,000 →</button>
+        </form>
+      </div>
+
+      <div class="game stack" style="--gap:20px" hidden>
+        <div class="panel lift">
+          <div class="row between"><h2>Your portfolio</h2><button class="btn ghost sm g-reset" type="button">Reset</button></div>
+          <div class="calc-out" style="margin-top:14px">
+            <div class="stat"><span>Total value</span><b class="g-val">$0</b></div>
+            <div class="stat"><span>Cash</span><b class="g-cash">$0</b></div>
+            <div class="stat"><span>Return</span><b><span class="chip g-ret">0%</span></b></div>
+          </div>
+          <div class="grid" style="grid-template-columns:minmax(0,2fr) minmax(0,1fr);--gap:10px;margin-top:18px">
+            <div class="field"><label for="g-sym">Stock or crypto</label><select id="g-sym" class="g-sym"></select><span class="hint g-px"></span></div>
+            <div class="field"><label for="g-qty">Quantity</label><input id="g-qty" class="g-qty" type="number" min="1" value="10" /></div>
+          </div>
+          <div class="row" style="margin-top:12px"><button class="btn primary g-buy" type="button">Buy</button><button class="btn g-sell" type="button">Sell</button><a class="small" href="screener.html">Need ideas? Use the screener →</a></div>
+        </div>
+        <div class="panel"><h3>Holdings</h3><div class="g-hold" style="margin-top:10px"></div></div>
+      </div>
+    </div>
+    <aside class="stack" style="--gap:20px">
+      <div class="panel"><div class="row between"><h3>Live leaderboard</h3><span class="chip"><span class="live-dot"></span> live</span></div><div class="lb table-wrap" style="margin-top:10px"></div></div>
+      <div class="ad-slot" data-ad="rectangle"></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">How it works</span><h2 style="margin-top:8px">Learn → Practice → Compete → Share</h2></div></div>
+    <div class="grid g4">
+      <div class="panel"><h3>Learn</h3><p class="small muted" style="margin-top:6px">Take the 60-second quiz and read the Academy guides before you place your first trade.</p></div>
+      <div class="panel"><h3>Practice</h3><p class="small muted" style="margin-top:6px">Trade 48 large caps and 6 cryptos with $100K virtual cash at real-time demo prices.</p></div>
+      <div class="panel"><h3>Compete</h3><p class="small muted" style="margin-top:6px">Rank by % return on the live leaderboard. Standings lock at 4 p.m. ET on the last trading day.</p></div>
+      <div class="panel"><h3>Share</h3><p class="small muted" style="margin-top:6px">Invite friends with your referral link and start a private league to settle who picks best.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap">
+    <div class="band accent">
+      <div><span class="eyebrow">Private leagues</span><h2 style="margin-top:10px">Run a league for your class, club or office</h2><p style="margin-top:10px">Set your own start cash, dates and rules. Free for schools, with sponsored packages for companies.</p></div>
+      <form data-form="contest" data-success="League request received|We'll email your league link within 24 hours." class="stack" style="--gap:10px">
+        <input type="hidden" name="type" value="private-league" />
+        <div class="field"><label for="l-org">School / company / group</label><input id="l-org" name="organization" required /></div>
+        <div class="field"><label for="l-email">Organizer email</label><input id="l-email" name="email" type="email" required /></div>
+        <div class="field"><label for="l-size">Expected players</label><select id="l-size" name="players"><option>2–20</option><option>21–100</option><option>101–500</option><option>500+</option></select></div>
+        <button class="btn amber block" type="submit">Request a league</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap grid g2">
+    <div class="panel" id="sponsors"><span class="eyebrow">Sponsors</span><h3 style="margin-top:8px">Put your brand on the prize</h3><p class="small muted" style="margin-top:6px">Title sponsorship, category prizes and leaderboard branding reach an engaged, finance-minded audience. Packages start at $500 per season.</p><a class="btn sm" style="margin-top:12px" href="partners.html#packages">See sponsor packages</a></div>
+    <div class="panel"><span class="eyebrow">Community-funded</span><h3 style="margin-top:8px">Grow the prize pool</h3><p class="small muted" style="margin-top:6px">Readers can add to the prize pool directly. 100% of prize-pool donations go to winners.</p><a class="btn primary sm" style="margin-top:12px" href="support.html#sponsor">Add to the pool</a></div>
+  </div>
+</section>
+
+<section class="section" id="rules">
+  <div class="wrap prose">
+    <h2>Official rules (summary)</h2>
+    <ul>
+      <li><b>No purchase necessary.</b> A purchase or donation does not improve your chances of winning. Void where prohibited.</li>
+      <li><b>Eligibility:</b> Open to individuals who have reached the age of majority where they live. Employees of Smart.Market and sponsors are not eligible. One account per person; duplicate accounts are disqualified.</li>
+      <li><b>Play:</b> Each player starts with $100,000 in virtual cash. No real money is invested. Prices are delayed or simulated and may differ from exchange prices.</li>
+      <li><b>Winners:</b> Ranked by % return at season close. Ties are broken by lower portfolio volatility, then by earlier entry. Winners are verified before prizes are paid.</li>
+      <li><b>Skill contest:</b> Winners are chosen by skill, not chance. Where local law requires it, winners must answer a mathematical skill-testing question.</li>
+      <li><b>Prizes:</b> Paid within 30 days by PayPal or bank transfer. Winners are responsible for applicable taxes.</li>
+      <li><b>Regional rules:</b> Some jurisdictions add registration or filing requirements for contests. Check the full rules for your region before entering.</li>
+    </ul>
+    <p class="small">Full official rules, including sponsor details, privacy and dispute terms, are in our <a href="terms.html#contest">Terms</a>.</p>
+  </div>
+</section>
