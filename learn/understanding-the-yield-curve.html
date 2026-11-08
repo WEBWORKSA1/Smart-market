@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reading the Yield Curve Like an Economist | Smart.Market</title>
+<meta name="description" content="What the Treasury yield curve shows, why it slopes, how to read spreads and implied forward rates, and what an inverted curve can and cannot tell you.">
+<link rel="canonical" href="https://smart.market/learn/understanding-the-yield-curve.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<meta property="og:type" content="article"><meta property="og:site_name" content="Smart.Market">
+<meta property="og:title" content="Reading the Yield Curve Like an Economist | Smart.Market"><meta property="og:description" content="What the Treasury yield curve shows, why it slopes, how to read spreads and implied forward rates, and what an inverted curve can and cannot tell you.">
+<meta property="og:url" content="https://smart.market/learn/understanding-the-yield-curve.html"><meta property="og:image" content="https://smart.market/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1D45E0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Smart.Market" href="/feed.xml">
+<script>try{var t=localStorage.getItem("sm_theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/styles.css?v=202611080451">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://smart.market/#org", "name": "Smart.Market", "url": "https://smart.market/", "logo": "https://smart.market/favicon.svg"}, {"@type": "WebSite", "@id": "https://smart.market/#site", "url": "https://smart.market/", "name": "Smart.Market", "publisher": {"@id": "https://smart.market/#org"}}, {"@type": "WebPage", "@id": "https://smart.market/learn/understanding-the-yield-curve.html", "url": "https://smart.market/learn/understanding-the-yield-curve.html", "name": "Reading the Yield Curve Like an Economist | Smart.Market", "description": "What the Treasury yield curve shows, why it slopes, how to read spreads and implied forward rates, and what an inverted curve can and cannot tell you.", "isPartOf": {"@id": "https://smart.market/#site"}, "dateModified": "2026-11-08T04:51:19.951286+00:00"}, {"@type": "Article", "headline": "Reading the Yield Curve Like an Economist", "description": "What the Treasury yield curve shows, why it slopes, how to read spreads and implied forward rates, and what an inverted curve can and cannot tell you.", "datePublished": "2026-11-08", "dateModified": "2026-11-08", "author": {"@type": "Organization", "name": "Smart.Market Editorial Team", "url": "https://smart.market/about.html"}, "publisher": {"@id": "https://smart.market/#org"}, "mainEntityOfPage": "https://smart.market/learn/understanding-the-yield-curve.html", "wordCount": 1250, "articleSection": "Markets"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://smart.market/"}, {"@type": "ListItem", "position": 2, "name": "Academy", "item": "https://smart.market/learn.html"}, {"@type": "ListItem", "position": 3, "name": "Reading the Yield Curve Like an Economist", "item": "https://smart.market/learn/understanding-the-yield-curve.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where can I see the current yield curve?", "acceptedAnswer": {"@type": "Answer", "text": "The US Treasury publishes daily par yield curve rates, and the Federal Reserve publishes selected interest rates in its H.15 statistical release. Both are free."}}, {"@type": "Question", "name": "Does an inverted curve mean I should sell my stocks?", "acceptedAnswer": {"@type": "Answer", "text": "Not on its own. Inversions have historically come with long and variable lags, and markets have sometimes risen afterward. Decisions should rest on your goals, time horizon and overall plan."}}, {"@type": "Question", "name": "What is the difference between yield and interest rate?", "acceptedAnswer": {"@type": "Answer", "text": "A bond's coupon is the fixed interest it pays. Its yield is the return you earn based on the price you pay, so yield moves as prices change in the market.\nThis guide is educational and not a recommendation to buy or sell any security."}}]}]}</script>
+</head>
+<body data-page="article">
+<a class="sr-only" href="#main">Skip to content</a>
+<div class="partner-bar"><div class="wrap"><a href="https://web.works/contact" target="_blank" rel="noopener"><b>Contact</b>, if you are interested in this website / domain name / sponsorship / advertisement / partnership →</a></div></div>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Smart.Market home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 21l5-6 4 3 5-7 4 4" stroke="var(--accent-ink)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="25" cy="15" r="2.2" fill="#E8A200"/></svg><span>Smart<span class="dot">.</span>Market</span></a>
+    <nav class="nav-links" aria-label="Main"><a href="/markets.html">Markets</a><a href="/brief.html">Daily Brief</a><a href="/news.html">News</a><a href="/screener.html">Screener</a><a href="/tools.html">Calculators</a><a href="/learn.html" aria-current="page">Academy</a><a href="/videos.html">Videos</a><a href="/championship.html">Championship</a><a href="/support.html">Support</a></nav>
+    <div class="nav-cta">
+      <button class="icon-btn" data-action="search" aria-label="Search any stock or crypto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      <button class="icon-btn" data-action="theme" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn primary hide-m" href="/get-matched.html">Free advisor request</a>
+      <button class="icon-btn menu-btn" data-action="menu" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+  <div class="tape" data-tv="ticker-tape" aria-label="Live market ticker"></div>
+</header>
+<main id="main">
+<article class="wrap article" itemscope itemtype="https://schema.org/Article">
+  <div class="crumbs"><a href="/">Home</a> / <a href="/learn.html">Academy</a> / Markets</div>
+  <header class="article-head">
+    <span class="eyebrow">Markets · Advanced</span>
+    <h1 itemprop="headline">Reading the Yield Curve Like an Economist</h1>
+    <p class="lede">What the Treasury yield curve shows, why it slopes, how to read spreads and implied forward rates, and what an inverted curve can and cannot tell you.</p>
+    <div class="byline"><span>By <b itemprop="author">Smart.Market Editorial Team</b></span><span>Updated <time itemprop="dateModified" datetime="2026-11-08">2026-11-08</time></span><span>7 min read</span><a href="/about.html#editorial">How we research</a></div>
+  </header>
+  <div class="article-grid">
+    <div class="prose article-body" itemprop="articleBody"><p>The yield curve is one of the most watched charts in finance. It plots the interest rates on government bonds across different maturities, from a few months to 30 years, on a single line. Economists, central bankers and bond traders read it as a summary of what markets expect for interest rates, inflation and growth.</p>
+<p>This guide explains how the curve is built, what drives its shape, how to extract information from it with spreads and forward rates, and why an inverted curve deserves attention but not panic.</p>
+<h2 id="key-takeaways">Key takeaways</h2>
+<ul>
+<li>The yield curve plots Treasury yields against time to maturity. Its slope reflects expected future short-term rates plus a term premium.</li>
+<li>A normal curve slopes upward; an inverted curve, where short-term yields exceed long-term yields, has historically preceded many US recessions, with long and variable lags.</li>
+<li>Spreads such as 10-year minus 2-year and 10-year minus 3-month are common ways to summarize the slope.</li>
+<li>Implied forward rates let you back out what the curve suggests about future short-term rates.</li>
+<li>The curve is a signal, not a timer. It has given false or early signals, and structural factors can distort it.</li>
+</ul>
+<h2 id="how-the-yield-curve-is-built">How the yield curve is built</h2>
+<p>The US Treasury publishes daily par yield curve rates for maturities ranging from one month to 30 years. Each point represents the yield an investor would earn by buying a Treasury of that maturity and holding it to the end. Connect the points and you have the curve.</p>
+<p>Treasuries are used because they are backed by the US government and trade in a deep, liquid market, so their yields mostly reflect interest rate expectations and compensation for time, rather than the risk that a particular borrower will fail to pay.</p>
+<h2 id="what-determines-the-shape">What determines the shape</h2>
+<p>Two broad forces drive the curve.</p>
+<p><strong>1. Expected short-term rates.</strong> Under the expectations view, a long-term yield is roughly an average of the short-term rates investors expect over that period. If markets expect the Federal Reserve to cut rates in coming years, long-term yields may sit below short-term ones.</p>
+<p><strong>2. The term premium.</strong> Investors usually want extra compensation for locking money up longer, because long bonds are more sensitive to inflation surprises and rate changes. This premium tends to push long yields above short yields. It is not directly observable and must be estimated with models, and it can shrink or even turn negative.</p>
+<p>Short-term yields are anchored closely to the Federal Reserve's policy rate. Long-term yields are set more by markets and reflect expectations for growth, inflation and global demand for safe assets.</p>
+<h2 id="the-four-basic-shapes">The four basic shapes</h2>
+<ul>
+<li><strong>Normal (upward-sloping):</strong> long yields above short yields. Often seen when the economy is expanding and policy is not unusually tight.</li>
+<li><strong>Steep:</strong> a wide gap between short and long yields. Often appears when the central bank has cut rates and markets expect growth and inflation to pick up.</li>
+<li><strong>Flat:</strong> little difference across maturities. Often a transition phase as policy tightens or expectations shift.</li>
+<li><strong>Inverted (downward-sloping):</strong> short yields above long yields. Suggests markets expect rates to fall, often because they anticipate slower growth.</li>
+</ul>
+<h2 id="reading-spreads">Reading spreads</h2>
+<p>Rather than staring at the whole curve, analysts summarize the slope with a spread between two maturities, usually quoted in basis points (one basis point = 0.01 percentage point).</p>
+<p>For example, with hypothetical yields of <strong>4.60%</strong> on the 2-year note and <strong>4.20%</strong> on the 10-year note:</p>
+<p><strong>10-year minus 2-year spread</strong> = 4.20% − 4.60% = <strong>−0.40%</strong>, or <strong>−40 basis points</strong></p>
+<p>A negative number means the curve is inverted between those two points. If the 2-year were 3.00% and the 10-year 4.50%, the spread would be <strong>+150 basis points</strong>, a fairly steep curve.</p>
+<p>The two most common spreads are:</p>
+<ul>
+<li><strong>10-year minus 2-year:</strong> popular with markets and widely quoted.</li>
+<li><strong>10-year minus 3-month:</strong> favored by many researchers. The Federal Reserve Bank of New York publishes a recession-probability model based on this spread.</li>
+</ul>
+<h2 id="extracting-implied-forward-rates">Extracting implied forward rates</h2>
+<p>Here is where the curve becomes a forecasting tool. If you know the 1-year and 2-year yields, you can calculate the 1-year rate the market is implicitly pricing for one year from now.</p>
+<p>Suppose the 1-year yield is <strong>5.0%</strong> and the 2-year yield is <strong>4.5%</strong> (using simple annual compounding). Investing for two years at 4.5% should be equivalent to investing for one year at 5.0% and then rolling into a new 1-year bond at some forward rate <em>f</em>:</p>
+<p>(1.045)² = (1.050) × (1 + <em>f</em>)</p>
+<p>1 + <em>f</em> = 1.092025 ÷ 1.050 = 1.04002</p>
+<p><strong><em>f</em> ≈ 4.0%</strong></p>
+<p>The curve implies that one-year rates will fall from about 5.0% today to about 4.0% a year from now. In reality, part of any long yield is term premium, so implied forwards blend expectations with compensation for risk. Still, this calculation is a direct way to see what an inverted curve is "saying."</p>
+<h2 id="why-the-curve-matters-for-portfolios">Why the curve matters for portfolios</h2>
+<h3 id="bond-prices-and-duration">Bond prices and duration</h3>
+<p>Longer bonds are more sensitive to rate changes. As an illustration, a zero-coupon bond paying $100 at maturity, priced at a 4% yield, would lose roughly <strong>1.9%</strong> of its value if its yield rose to 5% with 2 years left, but roughly <strong>9.1%</strong> with 10 years left. Shifts in the curve's level and slope therefore affect bond funds very differently depending on their duration.</p>
+<h3 id="banks-and-lending">Banks and lending</h3>
+<p>Banks often borrow short and lend long. A steep curve can widen their lending margins; a flat or inverted curve can squeeze them, which may tighten credit conditions.</p>
+<h3 id="cash-vs-bonds">Cash vs bonds</h3>
+<p>When the curve is inverted, short-term instruments may yield more than long-term bonds. That does not automatically make cash the better choice: if rates fall, short-term income falls with them, while longer bonds lock in yields and may rise in price.</p>
+<h2 id="what-an-inversion-can-and-cannot-tell-you">What an inversion can and cannot tell you</h2>
+<p>In the US, inversions of the yield curve have preceded most recessions over the past several decades, which is why they draw headlines. But be careful with that history:</p>
+<ul>
+<li><strong>Timing is unreliable.</strong> The lag between inversion and recession has varied widely, and stocks have sometimes risen for long stretches after an inversion.</li>
+<li><strong>False signals happen.</strong> Not every inversion has been followed by a recession within a typical forecasting window.</li>
+<li><strong>Structure can distort the curve.</strong> Central bank bond purchases, global demand for Treasuries and shifts in the term premium can flatten long yields without signaling weakness.</li>
+<li><strong>Causation is debated.</strong> An inversion may reflect expectations of a slowdown rather than cause one, although tight credit can feed back into the economy.</li>
+</ul>
+<p>Treat the curve as one input alongside employment, inflation, credit spreads and corporate earnings, not as a standalone trading signal.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="where-can-i-see-the-current-yield-curve">Where can I see the current yield curve?</h3>
+<p>The US Treasury publishes daily par yield curve rates, and the Federal Reserve publishes selected interest rates in its H.15 statistical release. Both are free.</p>
+<h3 id="does-an-inverted-curve-mean-i-should-sell-my-stocks">Does an inverted curve mean I should sell my stocks?</h3>
+<p>Not on its own. Inversions have historically come with long and variable lags, and markets have sometimes risen afterward. Decisions should rest on your goals, time horizon and overall plan.</p>
+<h3 id="what-is-the-difference-between-yield-and-interest-rate">What is the difference between yield and interest rate?</h3>
+<p>A bond's coupon is the fixed interest it pays. Its yield is the return you earn based on the price you pay, so yield moves as prices change in the market.</p>
+<p>This guide is educational and not a recommendation to buy or sell any security.</p>
+<h2 id="sources-and-further-reading">Sources and further reading</h2>
+<ul>
+<li><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates">U.S. Treasury: Interest Rate Data Center</a></li>
+<li><a href="https://www.federalreserve.gov/releases/h15/">Federal Reserve: Selected Interest Rates (H.15)</a></li>
+<li><a href="https://www.federalreserve.gov/monetarypolicy.htm">Federal Reserve: Monetary Policy</a></li>
+<li><a href="https://www.treasurydirect.gov/">TreasuryDirect</a></li>
+<li><a href="https://www.investor.gov/">Investor.gov, the SEC's investor education site</a></li>
+</ul>
+      
+      <aside class="band accent" style="margin-block:28px"><div><span class="eyebrow">Next step</span><h2 style="margin-top:8px;font-size:1.5rem">Get new guides and the daily brief</h2><p style="margin-top:8px">Join the Smart Open list for new Academy guides and market briefs. Free; unsubscribe anytime.</p></div><div><a class="btn amber lg block" href="#newsletter">Join free →</a></div></aside>
+      <p class="xs muted">This guide is for education only and is not personalized financial, tax or legal advice. Rules and limits change; confirm current figures with official sources. Spotted an error? <a href="/contact.html">Tell us</a> and we'll correct it.</p>
+    </div>
+    <aside class="article-side">
+      <div class="panel toc"><h4>On this page</h4><ol><li><a href="#how-the-yield-curve-is-built">How the yield curve is built</a></li><li><a href="#what-determines-the-shape">What determines the shape</a></li><li><a href="#the-four-basic-shapes">The four basic shapes</a></li><li><a href="#reading-spreads">Reading spreads</a></li><li><a href="#extracting-implied-forward-rates">Extracting implied forward rates</a></li><li><a href="#why-the-curve-matters-for-portfolios">Why the curve matters for portfolios</a></li><li><a href="#what-an-inversion-can-and-cannot-tell-you">What an inversion can and cannot tell you</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li><li><a href="#sources-and-further-reading">Sources and further reading</a></li></ol></div>
+      <div class="panel"><h4>Share</h4><div class="row" style="--gap:6px;margin-top:8px" data-share></div></div>
+      <div class="panel" style="background:var(--accent-soft);border-color:transparent"><h4>Free advisor request</h4><p class="small muted" style="margin-top:6px">Get matched with licensed professionals. No cost, no obligation.</p><a class="btn primary sm block" style="margin-top:10px" href="/get-matched.html">Start in 2 minutes</a></div>
+    </aside>
+  </div>
+  <section class="section tight"><h2 style="font-size:1.4rem;margin-bottom:14px">Keep reading</h2><div class="grid g3"><a class="article-card" href="/learn/how-to-read-an-earnings-report.html"><div class="cover" style="background:linear-gradient(135deg,hsl(350 70% 38%),hsl(390 65% 25%))">Markets</div><div class="body"><h4>How to Read an Earnings Report in 10 Minutes</h4><span class="meta">Intermediate · 7 min read</span></div></a><a class="article-card" href="/learn/how-to-use-a-stock-screener.html"><div class="cover" style="background:linear-gradient(135deg,hsl(350 70% 38%),hsl(390 65% 25%))">Markets</div><div class="body"><h4>How to Use a Stock Screener to Find Quality at a Fair Price</h4><span class="meta">Beginner · 6 min read</span></div></a><a class="article-card" href="/learn/pe-ratio-and-valuation-basics.html"><div class="cover" style="background:linear-gradient(135deg,hsl(350 70% 38%),hsl(390 65% 25%))">Markets</div><div class="body"><h4>P/E Ratio and Valuation Basics: What You&#x27;re Really Paying For</h4><span class="meta">Beginner · 6 min read</span></div></a></div></section>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="stack" style="--gap:12px">
+        <a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M7 21l5-6 4 3 5-7 4 4" stroke="var(--accent-ink)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="25" cy="15" r="2.2" fill="#E8A200"/></svg><span>Smart<span class="dot">.</span>Market</span></a>
+        <p class="muted small" style="max-width:38ch">Live market intelligence, an automatic daily brief, free money tools and plain-English guides for people who want to make the smart move.</p>
+        <form data-form="newsletter" data-replace="no" data-success="You're on the list" class="inline-form"><input type="hidden" name="source" value="footer" /><label class="sr-only" for="ft-email">Email</label><input id="ft-email" name="email" type="email" required placeholder="Your email" /><button class="btn primary sm" type="submit">Join</button></form>
+      </div>
+      <div><h4>Markets</h4><ul><li><a href="/markets.html">Markets today</a></li><li><a href="/brief.html">Daily brief</a></li><li><a href="/news.html">Market news</a></li><li><a href="/screener.html">Stock screener</a></li><li><a href="/markets.html#calendar">Economic calendar</a></li></ul></div>
+      <div><h4>Learn &amp; tools</h4><ul><li><a href="/learn.html">Smart Academy</a></li><li><a href="/playbook.html">Investor Playbook</a></li><li><a href="/tools.html">Calculators</a></li><li><a href="/glossary.html">Glossary</a></li><li><a href="/compare.html">Choose a broker</a></li><li><a href="/videos.html">Videos</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="/about.html">About &amp; editorial</a></li><li><a href="/get-matched.html">Advisor requests</a></li><li><a href="/championship.html">Championship</a></li><li><a href="/partners.html">Advertise / partner</a></li><li><a href="/careers.html">Careers</a></li><li><a href="/support.html">Support us</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/privacy.html">Privacy policy</a></li><li><a href="/terms.html">Terms of use</a></li><li><a href="/terms.html#disclaimer">Investment disclaimer</a></li><li><a href="/terms.html#affiliate">Advertiser disclosure</a></li><li><a href="/terms.html#trademarks">Trademarks &amp; copyright</a></li><li><a href="/terms.html#contest">Contest rules</a></li></ul></div>
+    </div>
+    <div class="fineprint">
+      <p><b>© 2026 Smart.Market. All rights reserved.</b> Smart.Market™, the Smart.Market logo, "Smart Score", "Smart Open" and "Smart Picks Championship" are trademarks of the site owner, a Webworks Media Network property. All site content, design, text, graphics and code are protected by copyright; reproduction without written permission is prohibited. Third-party names, indices, logos and trademarks (for example S&amp;P 500®, Nasdaq®, Dow Jones®, TradingView®, YouTube™) belong to their respective owners and are used for identification only; no endorsement or affiliation is implied. See <a href="/terms.html#trademarks">trademarks &amp; copyright</a>.</p>
+      <p>Educational content only, not investment, tax or legal advice. Smart.Market is not a registered investment adviser, broker-dealer or financial planner. Investing involves risk, including loss of principal. Market data may be delayed and is provided "as is" by third-party sources (see <a href="/terms.html#data">data attribution</a>). Some links may be from partners who compensate us; see our <a href="/terms.html#affiliate">advertiser disclosure</a>.</p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/config.js?v=202611080451"></script>
+<script src="/assets/data.js?v=202611080451"></script>
+<script src="/assets/app.js?v=202611080451"></script>
+</body>
+</html>
