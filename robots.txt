@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_source/
+Disallow: /404.html
+
+Sitemap: https://smart.market/sitemap.xml
