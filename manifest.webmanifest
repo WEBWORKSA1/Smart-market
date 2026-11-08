@@ -1,0 +1,15 @@
+{
+  "name": "Smart.Market",
+  "short_name": "Smart.Market",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2F4F7",
+  "theme_color": "#1D45E0",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
