@@ -1,0 +1,47 @@
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Home</a> / Markets</div>
+    <div class="row between" style="align-items:end">
+      <div><h1>Markets today</h1><p class="lede">Live indices, futures, bonds, currencies, stocks and crypto on one screen, plus a stock heatmap, top movers and economic and earnings calendars.</p></div>
+      <span class="chip"><span class="live-dot"></span> Live data · <span data-today></span></span>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" data-needs="market" hidden>
+  <div class="wrap">
+    <div class="row between" style="margin-bottom:12px"><h2 style="font-size:1.3rem">Daily snapshot</h2><span class="xs muted" data-updated-from="market"></span></div>
+    <div data-widget="indices" data-syms="SPX,NDX,DJI,RUT,TSX,FTSE,DAX,N225,SENSEX,VIX" class="idx-grid"></div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap split">
+    <div class="stack" style="--gap:24px">
+      <div class="panel"><h2 style="font-size:1.3rem;margin-bottom:12px">Global markets · live</h2><div class="tv-box tall" data-tv="market-overview" data-height="560"></div></div>
+      <div class="panel" data-needs="market" hidden><div class="row between"><h2 style="font-size:1.3rem">All markets: day, 1-month, YTD and 52-week range</h2></div><div data-widget="assets" style="margin-top:10px"></div></div>
+      <div class="panel"><div class="row between"><h2 style="font-size:1.3rem">S&amp;P 500 heatmap · live</h2><span class="xs muted">Size = market value · colour = % change</span></div><div class="tv-box heat" data-tv="stock-heatmap" style="margin-top:12px"></div></div>
+      <div class="panel" id="crypto"><h2 style="font-size:1.3rem;margin-bottom:12px">Crypto · live</h2><div data-widget="crypto" data-limit="12"></div><div class="tv-box" data-tv="crypto-coins-heatmap" style="height:420px;margin-top:16px"></div></div>
+      <div class="panel" id="fx"><h2 style="font-size:1.3rem;margin-bottom:12px">Currency cross rates · live</h2><div class="tv-box" data-tv="forex-cross-rates" data-height="400" style="height:400px"></div></div>
+      <div class="panel" id="calendar"><h2 style="font-size:1.3rem">Economic calendar</h2><p class="xs muted" style="margin:4px 0 12px">Upcoming data releases and central-bank events that move rates, currencies and stocks.</p><div class="tv-box tall" data-tv="events" data-height="560"></div></div>
+      <div class="panel" id="earnings" data-needs="earnings" hidden><h2 style="font-size:1.3rem">Earnings calendar</h2><p class="xs muted" style="margin:4px 0 12px">Upcoming quarterly reports from the largest companies, with consensus EPS estimates.</p><div data-widget="earnings"></div></div>
+    </div>
+    <aside class="stack" style="--gap:20px">
+      <div class="panel" data-needs="market" hidden><h3>Sector performance today</h3><p class="xs muted" style="margin-bottom:8px">Average move of the large caps we track.</p><div data-widget="sectors"></div></div>
+      <div class="panel" data-needs="market" hidden><h3>Movers</h3><div data-widget="movers" data-limit="8" style="margin-top:6px"></div></div>
+      <div class="tv-box" data-fallback="market" data-tv="hotlists" data-height="560" style="height:560px"></div>
+      <div class="panel"><h3>Watchlist</h3><div data-widget="watchlist" style="margin-top:10px"></div><p class="xs muted" style="margin-top:8px">Tip: use the search icon to open a live chart for any symbol.</p></div>
+      <div class="panel"><h3>Market headlines</h3><div class="tv-box" data-tv="timeline" data-height="520" style="height:520px;margin-top:10px"></div></div>
+      <div class="panel" style="background:var(--accent-soft);border-color:transparent"><h3>Markets moving your retirement?</h3><p class="small muted" style="margin-top:6px">A licensed professional can stress-test your plan in one free call.</p><a class="btn primary block" style="margin-top:12px" href="/get-matched.html">Request a free consultation</a></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap prose">
+    <h2>How to read this page</h2>
+    <p><b>Indices</b> such as the S&amp;P 500, Nasdaq 100 and S&amp;P/TSX Composite summarize how a whole market performed. <b>Futures</b> trade nearly around the clock and show where markets may open. <b>Bond yields</b> move opposite to bond prices; a rising 10-year Treasury yield usually raises mortgage rates and pressures expensive growth stocks. <b>The VIX</b> measures expected volatility in the S&amp;P 500 over the next 30 days: readings under 15 are calm, above 30 signal stress.</p>
+    <p>New to markets? Start with <a href="/learn/index-funds-explained.html">index funds explained</a>, <a href="/learn/understanding-the-yield-curve.html">reading the yield curve</a> and <a href="/learn/how-to-read-an-earnings-report.html">how to read an earnings report</a>.</p>
+    <p class="xs muted">Data sources: live widgets by TradingView; crypto by CoinGecko; daily snapshot from public market data, refreshed automatically each trading day. Some quotes are delayed. Information only, not investment advice. See <a href="/terms.html#data">data attribution</a>.</p>
+  </div>
+</section>
