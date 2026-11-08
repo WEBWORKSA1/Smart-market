@@ -1,0 +1,46 @@
+# Smart.Market — automatic daily refresh.
+# TO ENABLE: copy this file to .github/workflows/daily-update.yml in the repository
+# (GitHub → Add file → Create new file → name it .github/workflows/daily-update.yml → paste → Commit).
+# It refreshes market data, the screener, the daily brief (with a permanent archive page),
+# news, earnings and videos, rebuilds the site and commits the result. GitHub Pages
+# redeploys automatically after each commit.
+name: Daily refresh
+on:
+  schedule:
+    - cron: "15 21 * * 1-5"   # 21:15 UTC, after the US market close (Mon–Fri)
+    - cron: "30 11 * * *"     # 11:30 UTC, morning refresh of news, videos and FX (daily)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install builder
+        run: pip install markdown
+      - name: Fetch fresh data
+        run: node _source/api-vercel/scripts/snapshot.js
+        # Optional: add a repository secret ANTHROPIC_API_KEY to have the daily brief polished by Claude.
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Rebuild site
+        run: python3 _source/build.py
+      - name: Commit and push
+        run: |
+          git config user.name "smart-market-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Daily refresh $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push

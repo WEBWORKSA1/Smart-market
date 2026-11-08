@@ -1,0 +1,7 @@
+{
+  "name": "smart-market-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Live data API for Smart.Market (market quotes, news, videos, daily brief, earnings, FX, form relay)",
+  "engines": { "node": "20.x" }
+}
