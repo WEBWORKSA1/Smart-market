@@ -1,0 +1,28 @@
+<section class="page-head">
+  <div class="wrap" style="max-width:860px">
+    <div class="crumbs"><a href="/">Home</a> / Daily brief</div>
+    <h1>Today's market brief</h1>
+    <p class="lede">Written automatically every trading day from fresh market data: how indices, sectors, rates, commodities and crypto moved, and what's on the calendar next.</p>
+  </div>
+</section>
+<section class="section tight">
+  <div class="wrap split">
+    <div class="stack" style="--gap:20px">
+      <article class="panel lift brief-card" data-needs="brief" hidden data-widget="brief">{{BRIEF_STATIC}}</article>
+      <div class="panel" data-fallback="brief">
+        <span class="eyebrow">Live snapshot · <span data-today></span></span>
+        <h2 style="margin-top:8px;font-size:1.4rem">Markets right now</h2>
+        <p class="muted small" style="margin:6px 0 14px">The written brief publishes after each trading session. In the meantime, here is the live picture.</p>
+        <div class="tv-box tall" data-tv="market-overview" data-height="520"></div>
+      </div>
+      <div class="panel"><h2 style="font-size:1.3rem">Today's biggest stories</h2><div class="tv-box" data-tv="timeline" data-height="520" style="height:520px;margin-top:12px"></div></div>
+      <div class="panel" data-needs="earnings" hidden><h2 style="font-size:1.3rem">Earnings this week</h2><div data-widget="earnings" data-limit="20" style="margin-top:10px"></div></div>
+    </div>
+    <aside class="stack" style="--gap:20px">
+      <div class="panel"><h3>Previous briefs</h3><ul class="archive-list" style="columns:1;margin-top:8px">{{BRIEF_LIST}}</ul><a class="small" href="/brief/archive.html">Full archive →</a></div>
+      <div class="panel"><h3>Get briefs by email</h3><p class="small muted" style="margin-top:6px">Join Smart Open for market briefs and new guides.</p><form data-form="newsletter" data-replace="no" data-success="You're on the list" class="stack" style="--gap:8px;margin-top:10px"><input type="hidden" name="source" value="brief" /><label class="sr-only" for="br-email">Email</label><input id="br-email" name="email" type="email" required placeholder="you@email.com" /><button class="btn primary block" type="submit">Join free</button></form></div>
+      <div class="panel" data-needs="market" hidden><h3>Sector performance</h3><div data-widget="sectors" style="margin-top:8px"></div></div>
+      <div class="panel"><h3>How the brief is made</h3><p class="small muted" style="margin-top:6px">After the US close an automated job collects index, sector, rate, commodity, currency and crypto data, then writes the brief with fixed, transparent rules. Numbers come straight from the data; nothing is predicted or recommended.</p></div>
+    </aside>
+  </div>
+</section>
