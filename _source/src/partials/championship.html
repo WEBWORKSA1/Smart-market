@@ -1,0 +1,110 @@
+<section class="hero" style="padding-bottom:24px">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="crumbs"><a href="/">Home</a> / Championship</div>
+      <span class="eyebrow">Season: <span data-season></span> · Free entry</span>
+      <h1 style="margin-top:12px">Smart Picks Championship</h1>
+      <p class="lede">$100,000 in virtual cash. Real market prices. Build a portfolio of large-cap stocks, commodities and crypto and try to beat the S&amp;P 500 this month. A new season starts automatically on the 1st.</p>
+      <div class="row" style="margin-top:22px"><a class="btn amber lg" href="#play">Enter free &amp; start trading</a><a class="btn lg" href="#rules">Official rules</a></div>
+    </div>
+    <div class="board" style="padding:22px;background:var(--ink);color:var(--bg);border-color:transparent">
+      <span class="xs" style="opacity:.75;text-transform:uppercase;letter-spacing:.1em">Season ends in</span>
+      <div class="countdown" data-widget="countdown" style="margin-top:10px"></div>
+      <div data-widget="prizes" style="margin-top:18px"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="play">
+  <div class="wrap split" data-widget="contest">
+    <div class="stack" style="--gap:20px">
+      <div class="panel lift reg">
+        <h2>Claim your $100,000 portfolio</h2>
+        <p class="muted" style="margin-top:6px">Free · No credit card · Set up in 30 seconds</p>
+        <form data-form="contest-entry" data-replace="no" data-success="Registered! Start trading below." class="grid g2" style="margin-top:18px;--gap:14px">
+          <input type="hidden" name="season" value="" data-season-input />
+          <div class="field"><label for="c-handle">Player name (public)</label><input id="c-handle" name="handle" required maxlength="20" placeholder="e.g. MapleValue" /></div>
+          <div class="field"><label for="c-email">Email (private, for prize contact)</label><input id="c-email" name="email" type="email" required placeholder="you@email.com" /></div>
+          <div class="field"><label for="c-country">Country</label><select id="c-country" name="country" required><option value="">Select…</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>India</option><option>Australia</option><option>Other</option></select></div>
+          <div class="field"><label for="c-level">Experience</label><select id="c-level" name="level"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+          <label class="check" style="grid-column:1/-1"><input type="checkbox" name="rules" required /> <span>I've reached the age of majority where I live and agree to the <a href="#rules">official rules</a>.</span></label>
+          <label class="check" style="grid-column:1/-1"><input type="checkbox" name="newsletter_optin" value="yes" checked /> <span>Email me season results and Smart Open.</span></label>
+          <input type="text" name="company_website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+          <button class="btn amber lg" type="submit" style="grid-column:1/-1">Start with $100,000 →</button>
+        </form>
+      </div>
+      <div class="game stack" style="--gap:20px" hidden>
+        <div class="panel lift">
+          <div class="row between"><h2>Your portfolio · <span data-season></span></h2><button class="btn ghost sm g-reset" type="button">Reset</button></div>
+          <div class="calc-out" style="margin-top:14px">
+            <div class="stat"><span>Total value</span><b class="g-val">$0</b></div>
+            <div class="stat"><span>Cash</span><b class="g-cash">$0</b></div>
+            <div class="stat"><span>Return</span><b><span class="chip g-ret">0%</span></b></div>
+          </div>
+          <div class="grid" style="grid-template-columns:minmax(0,2fr) minmax(0,1fr);--gap:10px;margin-top:18px">
+            <div class="field"><label for="g-sym">Asset (<span class="g-count">0</span> available)</label><select id="g-sym" class="g-sym"></select><span class="hint g-px"></span></div>
+            <div class="field"><label for="g-qty">Quantity</label><input id="g-qty" class="g-qty" type="number" min="0" step="any" value="10" /></div>
+          </div>
+          <div class="row" style="margin-top:12px"><button class="btn primary g-buy" type="button">Buy</button><button class="btn g-sell" type="button">Sell</button><a class="small" href="/screener.html">Need ideas? Use the screener →</a></div>
+          <p class="xs muted" style="margin-top:10px">Stock and commodity prices come from the latest daily close; crypto prices update live. Your portfolio is saved in this browser.</p>
+        </div>
+        <div class="panel"><h3>Holdings</h3><div class="g-hold" style="margin-top:10px"></div></div>
+      </div>
+    </div>
+    <aside class="stack" style="--gap:20px">
+      <div class="panel"><div class="row between"><h3>You vs the benchmarks</h3><span class="chip"><span class="live-dot"></span> live</span></div><div class="lb table-wrap" style="margin-top:10px"></div></div>
+      <div class="panel"><h3>Share your league</h3><p class="small muted" style="margin-top:6px">Challenge friends to beat you this month.</p><div class="row" style="--gap:6px;margin-top:10px" data-share></div></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">How it works</span><h2 style="margin-top:8px">Learn → Practice → Compete → Share</h2></div></div>
+    <div class="grid g4">
+      <div class="panel"><h3>Learn</h3><p class="small muted" style="margin-top:6px">Take the quiz and read the Academy guides before your first trade.</p></div>
+      <div class="panel"><h3>Practice</h3><p class="small muted" style="margin-top:6px">Trade large-cap stocks, commodities and crypto with $100K of virtual cash.</p></div>
+      <div class="panel"><h3>Compete</h3><p class="small muted" style="margin-top:6px">Rank by percentage return. Standings lock at 4 p.m. ET on the last day of the month.</p></div>
+      <div class="panel"><h3>Share</h3><p class="small muted" style="margin-top:6px">Invite friends, classmates or colleagues and start a private league.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap">
+    <div class="band accent">
+      <div><span class="eyebrow">Private leagues</span><h2 style="margin-top:10px">Run a league for your class, club or office</h2><p style="margin-top:10px">Choose your own dates and rules. Free for schools, with sponsored packages for companies.</p></div>
+      <form data-form="private-league" data-success="League request received|We'll reply with your league details within one business day." class="stack" style="--gap:10px">
+        <div class="field"><label for="l-org">School, company or group</label><input id="l-org" name="organization" required /></div>
+        <div class="field"><label for="l-email">Organizer email</label><input id="l-email" name="email" type="email" required /></div>
+        <div class="field"><label for="l-size">Expected players</label><select id="l-size" name="players"><option>2–20</option><option>21–100</option><option>101–500</option><option>500+</option></select></div>
+        <input type="text" name="company_website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+        <button class="btn amber block" type="submit">Request a league</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap grid g2">
+    <div class="panel" id="sponsors"><span class="eyebrow">Sponsors</span><h3 style="margin-top:8px">Put your brand on the prize</h3><p class="small muted" style="margin-top:6px">Title sponsorship, category prizes and leaderboard branding reach an engaged, finance-minded audience.</p><a class="btn sm" style="margin-top:12px" href="/partners.html#packages">See sponsor packages</a></div>
+    <div class="panel"><span class="eyebrow">Community-funded</span><h3 style="margin-top:8px">Grow the prize pool</h3><p class="small muted" style="margin-top:6px">Readers can pledge to the prize pool. Pledges earmarked for prizes go to winners.</p><a class="btn primary sm" style="margin-top:12px" href="/support.html#sponsor">Fund a prize</a></div>
+  </div>
+</section>
+
+<section class="section" id="rules">
+  <div class="wrap prose">
+    <h2>Official rules (summary)</h2>
+    <ul>
+      <li><b>No purchase necessary.</b> A purchase, pledge or donation does not improve your chances of winning. Void where prohibited.</li>
+      <li><b>Eligibility:</b> individuals who have reached the age of majority where they live. Employees of Smart.Market and prize sponsors are not eligible. One registration per person; duplicate entries are disqualified.</li>
+      <li><b>Play:</b> each player starts the season with $100,000 in virtual cash. No real money is invested. Stock and commodity prices are based on the latest daily close and crypto prices on live public quotes; prices may differ from exchange prices.</li>
+      <li><b>Season:</b> each calendar month is a season. Standings lock at 4 p.m. ET on the last day of the month.</li>
+      <li><b>Winners:</b> ranked by percentage return. Finalists submit their portfolio for verification. Ties are broken by lower portfolio volatility, then earlier registration.</li>
+      <li><b>Skill contest:</b> winners are chosen by skill, not chance. Where required by law (for example in Canada), winners must correctly answer a mathematical skill-testing question.</li>
+      <li><b>Prizes:</b> funded by sponsors and announced before each season closes. Paid within 30 days of verification. Winners are responsible for applicable taxes.</li>
+      <li><b>Regional rules:</b> some jurisdictions add registration or filing requirements for contests (for example, contests open to residents of Quebec). Where those requirements haven't been met, residents of that jurisdiction may play but are not eligible for prizes.</li>
+    </ul>
+    <p class="small">Full terms are in our <a href="/terms.html#contest">Terms</a>.</p>
+  </div>
+</section>
